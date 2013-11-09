@@ -24,15 +24,18 @@ def run(cmd):
 
 def sanitize(string):
     "Converts parameters and stuff to be correctly evaluated."
+    # Remove class declarations in parameters
+    regex = re.compile('new [\w]{1,3}(.*),')
+    sane = regex.sub(r'', string)
     # Remove double parentesis
-    sane = string.strip().replace('))', ')')
+    sane = sane.strip().replace('))', ')')
     # Boolean values
     sane = sane.strip().replace('false', 'False')
     sane = sane.strip().replace('true', 'True')
     # Convert float values to string
     regex = re.compile('([\-]?\d?\.?\d\F)')
     sane = regex.sub("'\1'", sane)
-    # Convert rest t
+    # Convert rest to string
     regex = re.compile('([, |\(])([\w+\d+\.]+)')
     sane = regex.sub(r'\1"\2"', sane)
     sane = replace_classnames(sane)

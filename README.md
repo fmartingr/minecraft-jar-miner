@@ -44,15 +44,15 @@ The script will create a json for each task for comparing every time you run the
 
 # Parsers
 
-Type | File | Status | Comment
------|------|--------|--------
-Textures | textures.py | Base info | 
-Items | items.py | Base info | 
-Blocks | blocks.py | Base info | 
-Achievements | achievements.py | Base info | Need icons and inheritance
-Languages | languages.py | Need rewrite | Assets folder moved to launcher
-Special items/blocks | -- | -- | 
-Potions | -- | -- | 
-Mobs | -- | -- | 
-Biomes | -- | -- | 
-Splash messages | -- | -- | 
+Type | File | Status | Comment | Updated to
+-----|------|--------|---------|-----------
+Textures | textures.py | Base info | -- | --
+Items | items.py | Base info | -- | --
+Blocks | blocks.py | Base info | -- | --
+Achievements | achievements.py | Only name | Need icons and inheritance | 1.7.2
+Languages | languages.py | Need rewrite | Assets folder moved to launcher | --
+Special items/blocks | -- | -- | -- | --
+Potions | -- | -- | -- | --
+Mobs | -- | -- | -- | --
+Biomes | -- | -- | -- | --
+Splash messages | -- | -- | -- | -- 

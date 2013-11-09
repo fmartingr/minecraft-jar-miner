@@ -88,7 +88,7 @@ class GameLanguage(object):
 #   ACHIEVEMENTS
 ###
 class GameAchievement(object):
-    def __init__(self, internal_id, name, *args):
+    def __init__(self, key, name, internal_id, *args):
         self.id = int(internal_id)
         self.name = name
 
