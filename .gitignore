@@ -1,5 +1,3 @@
 *.jar
 *.pyc
-*.json
-/classes
-/jarfile
+/versions/*
