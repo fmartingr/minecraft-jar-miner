@@ -1,48 +1,39 @@
 minecraft-jar-miner
 ===================
 
-Extract minecraft information from its jarfiles. Used in my test site [minecraftcodex.com](http://www.minecraftcodex.com)
+**CURRENTLY UPDATING FOR 1.8 SNAPSHOT**
 
-**Note:** The languages task is currently unimplemented since Mojang moved the language assets from the jarfile to the launcher folder which varies between operating systems. Will be reimplemented Soon™.
+Used to get data for my test site [minecraftcodex.com](http://www.minecraftcodex.com)
+
+# Requirements.txt
+
+- fabric
+
+# Commands
+
+```
+$ fab -l
+Available commands:
+    clean     Cleans decompiled and unpacked files for the specified version.
+    unpack    Unpacks and decompiles classes for the specified version
+    versions  List all detected versions
+```
+
+```
+$ fab unpack:version=1.6.4
+```
 
 # Usage
-Get the jarfile from the version you want to extract information, an place them in the folder, or specify a full path to it as argument:
 
-```
-$ ./run.sh 1.6.2.jar
-[] Preparing files from JAR: 1.6.2.jar []
-    Unpackaging jar file
-    Decompiling classes
-    Cleaning
+TODO
 
-[==] TEXTURES
-[ i] Found 875 textures (875 new)
+# Configuration
 
-[==] ITEMS
-     Looking for java files:  yb.java
-     Looking for dataz
-[ i] Found 169 items (169 new)
-
-[==] BLOCKS
-     Looking for java files... aqw.java
-     Looking for dataz
-[ i] Found 160 blocks (160 new)
-
-[==] ACHIEVEMENTS
-     Looking for java files... ko.java
-     Looking for dataz
-[ i] Found 24 achievements (24 new)
-```
-
-The script will create a json for each task for comparing every time you run the miner.
-
-# Configuration file (conf.py)
-
-
-- **DEBUG**: Show a little more information when extracting. Using for developing.  
-- **SHOW SUMMARY**: Shows which items have been added/deleted from the current version comparing the json output files from the last jar you mined.
+TODO
 
 # Parsers
+
+TODO
 
 Type | File | Status | Comment | Updated to
 -----|------|--------|---------|-----------
@@ -55,4 +46,4 @@ Special items/blocks | -- | -- | -- | --
 Potions | -- | -- | -- | --
 Mobs | -- | -- | -- | --
 Biomes | -- | -- | -- | --
-Splash messages | -- | -- | -- | -- 
+Splash messages | -- | -- | -- | --
