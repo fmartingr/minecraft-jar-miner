@@ -1,3 +1,4 @@
 *.jar
 *.pyc
 /versions/*
+local_config.py
